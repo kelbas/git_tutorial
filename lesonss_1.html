@@ -5,6 +5,59 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Test!</h1>
+    <h1>Personal Information</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" id="form">
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>Surname:</label>
+        <input type="text" name="user" form="form" required/> <br><br>
+        <label>Name:</label>
+        <input type="text" name="name" form="form"/> <br><br>
+        <label>How old are you?:</label>
+        <input type="text" name="old" size="1" form="form"/> <br><br>
+        <label>Full date of birth:</label>
+        <input type="date" name="birth" form="form"> <br><br>
+        <label>I accept the terms of the agreement</label>
+        <input name="" type="checkbox" form="form"/> <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Registration</legend>
+
+        <label>E-mail:</label>
+        <input name="email" type="text" form="form"/> <br><br>
+        <label>Password</label>
+        <input name="password" type="password" form="form"/> <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>An interesting fact about you!</legend>
+
+        <lable>Do you love cats?</lable> </br>
+        <input type="radio" form="form"/> <span>Yes</span> <br>
+        <input type="radio" form="form"/> <span>No</span> <br>
+
+        <label>What if you favorite colors?</label> <br>
+        <input type="color" form="form"/> <br>
+
+        <label>What time do you go to bed?</label><br>
+        <input type="time" form="form"/> <br>
+
+        <label>What your favorite brand of cars?</label><br>
+        <select multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+            <option></option>
+        </select> <br>
+        <label>How do you rate our work?</label> <br>
+        <input type="range" step="1" min="0" max="10" value="0"/>
+    </fieldset>
+    <fieldset>
+        <legend>Your comments:</legend> <br>
+        <textarea placeholder="Comments"></textarea>
+    </fieldset>
+
+    <input form="form" type="submit" name="submit" value="Submit"/>
+    </form>
 </body>
 </html>
